@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>공차</title>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/gongcha.css">
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        window.onload = () => {
+            var swiper = new Swiper(".mainVisual", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+
+            var swiper = new Swiper(".sec01Swiper", {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="logo">
+                <a href="#"><img src="img/logo-black.png" alt="공차로고"></a>
+            </div><!-- .logo end -->
+            <div class="header_inner">
+                <nav class="nav">
+                    <ul class="gnb">
+                        <li><a href="#"><span>브랜드</span></a></li>
+                        <li><a href="#"><span>메뉴</span></a></li>
+                        <li><a href="#"><span>매장</span></a></li>
+                        <li><a href="#"><span>공차소식</span></a></li>
+                        <li><a href="#"><span>창업안내</span></a></li>
+                </nav><!-- .nav end -->
+            </div><!-- .header_inner end -->
+        </header><!-- .header end -->
+
+        <main class="main">
+            <!-- Swiper -->
+            <div class="swiper mainVisual">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="image">
+                            <a href="#"><img src="img/mainvisual-01.jpg" alt=""></a>
+                        </div><!-- .image end -->
+                        <div class="text">
+                            <span>얼그레이 찻잎을 4시간 동안 직접 우린</span>
+                            <p>시원 달콤한 납작복숭아 아이스티 얼그레이</p>
+                        </div><!-- .text end -->
+                    </div><!-- .swiper-slide end -->
+                    <div class="swiper-slide">
+                        <div class="image">
+                            <a href="#"><img src="img/mainvisual-02.jpg" alt=""></a>
+                        </div><!-- .image end -->
+                        <div class="text">
+                            <span>풍성한 더블 망고와 코코넛, 달콘하고 쫀득한 스티키 라이스</span>
+                            <p>츄잉 망고 밀크</p>
+                        </div><!-- .text end -->
+                    </div><!-- .swiper-slide end -->
+                    <div class="swiper-slide">
+                        <div class="image">
+                            <a href="#"><img src="img/mainvisual-03.jpg" alt=""></a>
+                        </div><!-- .image end -->
+                        <div class="text">
+                            <span>굿모닝 공차 세트 메뉴 구매 시</span>
+                            <p>최대 1,400원 할인</p>
+                        </div><!-- .text end -->
+                    </div><!-- .swiper-slide end -->
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div><!-- .mainVisual end -->
+        </main><!-- .main end -->
+
+        <section class="section">
+            <div class="section-01">
+                <div class="inner">
+                    <div class="title">
+                        <h3>Best Menu</h3>
+                    </div><!-- .title end -->
+                    <!-- Swiper -->
+                    <div class="swiper sec01Swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="img/blackmilktea.png" alt="블랙 밀크티">
+                                </div><!-- .image end -->
+                                <div class="text">
+                                    <p>블랙 밀크티</p>
+                                    <span>공차 대표 메뉴 블랙밀크티와<br />
+                                        쫄깃쫄깃한 펄의 콤비네이션</span>
+                                </div><!-- .text end -->
+                            </div><!-- .swiper-slide end -->
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="img/taromilktea.png" alt="타로 밀크티">
+                                </div><!-- .image end -->
+                                <div class="text">
+                                    <p>타로 밀크티</p>
+                                    <span>고소한 타로 밀크티와<br />
+                                        쫀득한 펄이 만난 공차의 인기 메뉴</span>
+                                </div><!-- .text end -->
+                            </div><!-- .swiper-slide end -->
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="img/coffee.png" alt="아메리카노">
+                                </div><!-- .image end -->
+                                <div class="text">
+                                    <p>아메리카노</p>
+                                    <span>브라질, 콜롬비아 외 대표적인 원두 5가지를<br />
+                                        블렌딩하여 찾은 최적의 맛</span>
+                                </div><!-- .text end -->
+                            </div><!-- .swiper-slide end -->
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="img/mangoyo.png" alt="망고 요구르트">
+                                </div><!-- .image end -->
+                                <div class="text">
+                                    <p>망고 요구르트</p>
+                                    <span>달콤한 망고 과육과 요구르트에<br />
+                                        화이트펄을 더하면 꼬들함이 느껴지는 주스</span>
+                                </div><!-- .text end -->
+                            </div><!-- .swiper-slide end -->
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="img/greentea.png" alt="제주 그린 밀크티">
+                                </div><!-- .image end -->
+                                <div class="text">
+                                    <p>제주 그린 밀크티</p>
+                                    <span>쌉사름한 제주산 녹차에 우유를 더한 풍부함과<br />
+                                        쫄깃한 식감을 더한 펄의 콤보</span>
+                                </div><!-- .text end -->
+                            </div><!-- .swiper-slide end -->
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="img/chocolate.png" alt="초콜렛 밀크티">
+                                </div><!-- .image end -->
+                                <div class="text">
+                                    <p>초콜렛 밀크티</p>
+                                    <span>공차 대표 메뉴 블랙밀크티와<br />
+                                        쫄깃쫄깃한 펄의 콤비네이션</span>
+                                </div><!-- .text end -->
+                            </div><!-- .swiper-slide end -->
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="img/strawb.png" alt="딸기쿠기 스무디">
+                                </div><!-- .image end -->
+                                <div class="text">
+                                    <p>딸기쿠기 스무디</p>
+                                    <span>얼그레이티로 만든 밀크 스무디에<br />
+                                        달콤한 딸기와 바삭한 쿠키, 쫄깃한 펄까지</span>
+                                </div><!-- .text end -->
+                            </div><!-- .swiper-slide end -->
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="img/mangomini.png" alt="미니펄 망고 밀크">
+                                </div><!-- .image end -->
+                                <div class="text">
+                                    <p>미니펄 망고 밀크</p>
+                                    <span>망고를 듬뿍 넣어 더욱 풍성해진<br />
+                                        미니펄 망고 밀크</span>
+                                </div><!-- .text end -->
+                            </div><!-- .swiper-slide end -->
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="img/honeyb.png" alt="허니 자몽 블랙티">
+                                </div><!-- .image end -->
+                                <div class="text">
+                                    <p>허니 자몽 블랙티</p>
+                                    <span>달콤 쌉싸름한 허니 자몽에<br />
+                                        깊고 진한 블랙티를 더한 프룻티</span>
+                                </div><!-- .text end -->
+                            </div><!-- .swiper-slide end -->
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="img/coco.png" alt="우롱티와 코코넛, 밀크폼">
+                                </div><!-- .image end -->
+                                <div class="text">
+                                    <p>우롱티와 코코넛, 밀크폼</p>
+                                    <span>고소한 우롱차에 코코넛 젤리와<br />
+                                        달콤 짭짤한 밀크폼을 올린 오리지널티</span>
+                                </div><!-- .text end -->
+                            </div><!-- .swiper-slide end -->
+                        </div><!-- .swiper-wrapper end -->
+                    </div><!-- .swiper end -->
+                </div><!-- .inner end -->
+            </div><!-- .section-01 end -->
+
+            <div class="section-02">
+                <div class="inner">
+                    <div class="title">
+                        <h3>Tea Recipe</h3>
+                    </div><!-- .title end -->
+                    <div class="item_wrap">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/tearecipe-01.jpg" alt="오리지널티">
+                            </div><!-- .image end -->
+                            <div class="text">
+                                <p>오리지널티</p>
+                                <span>황실에 바치던 잎차만 골라 차마다<br />
+                                    다른 황금률로 우려 한 잔 한 잔 부드러움을 더해 만듭니다.</span>
+                            </div><!-- .text end -->
+                        </div><!-- .item end -->
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/tearecipe-02.jpg" alt="밀크티">
+                            </div><!-- .image end -->
+                            <div class="text">
+                                <p>밀크티</p>
+                                <span>각 차종에 맞는 황금률로 우려 담백한 우유와<br />
+                                    허니, 카라멜 등 새로운 맛을 더해 만듭니다.</span>
+                            </div><!-- .text end -->
+                        </div><!-- .item end -->
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/tearecipe-03.jpg" alt="프룻티">
+                            </div><!-- .image end -->
+                            <div class="text">
+                                <p>프룻티</p>
+                                <span>찻잎의 푸름을 간직한 녹차만 골라 최적의 온도 89℃로 우려<br />
+                                    달콤상큼한 과일을 더해 만듭니다.</span>
+                            </div><!-- .text end -->
+                        </div><!-- .item end -->
+                    </div><!-- .item_wrap end -->
+                </div><!-- .inner end -->
+            </div><!-- .section-02 end -->
+
+            <div class="section-03">
+                <div class="inner">
+                    <div class="title">
+                        <h3>NEWS & EVENT</h3>
+                        <a href="#" class="btn">더보기</a>
+                    </div><!-- .title end -->
+                    <div class="item_wrap">
+                        <div class="item">
+                            <a href="#">
+                                <div class="tag">EVENT</div>
+                                <div class="text">
+                                    <p>공항에서도 공차! 멤버십 쿠폰 2종 혜택</p>
+                                    <span class="date">2025년 05월 31일 ~ 2025년 06월 30일</span>
+                                </div><!-- .text end -->
+                            </a>
+                        </div><!-- .item end -->
+                        <div class="item">
+                            <a href="#">
+                                <div class="tag">EVENT</div>
+                                <div class="text">
+                                    <p>[공차 X 일상카페] 멜론멜론 신메뉴 3종 포함 모바일쿠폰 한정수량 20% 특가!</p>
+                                    <span class="date">2025년 05월 20일 ~ 2025년 06월 02일</span>
+                                </div><!-- .text end -->
+                            </a>
+                        </div><!-- .item end -->
+                        <div class="item">
+                            <a href="#">
+                                <div class="tag">EVENT</div>
+                                <div class="text">
+                                    <p>매월 10일~20일 카공데이! 카카오페이머니로 결제시, 선착순 1천원 즉시할인</p>
+                                    <span class="date">2025년 05월 31일 ~ 2025년 06월 30일</span>
+                                </div><!-- .text end -->
+                            </a>
+                        </div><!-- .item end -->
+                        <div class="item">
+                            <a href="#">
+                                <div class="tag">EVENT</div>
+                                <div class="text">
+                                    <p>kt멤버십 모여라!</p>
+                                    <span class="date">2024년 09월 03일 ~ 2025년 08월 31일</span>
+                                </div><!-- .text end -->
+                            </a>
+                        </div><!-- .item end -->
+                    </div><!-- .item_wrap end -->
+                </div><!-- .inner end -->
+            </div><!-- .section-03 end -->
+
+
+            <footer class="footer">
+                <div class="item_wrap">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="">
+                    </div><!-- .logo end -->
+                    <div class="title">
+                        <h4>개인정보취급방침</h4>
+                    </div><!-- .title end -->
+                    <div class="text">
+                        <div class="text_line-01">
+                            <div><strong>주소</strong><span> 서울 종로구 종로 47(공평동, 7층)</span></div>
+                            <div><strong>대표이사</strong><span> 고희경</span></div>
+                        </div><!-- .text end -->
+                        <div class="text_line-02">
+                            <div><strong>사업자 등록번호</strong><span> 214-88-84534</span></div>
+                            <div><strong>고객문의</strong><span> 02-779-7758</span></div>
+                            <div><strong>가맹문의</strong><span> 02-3276-9581</span></div>
+                        </div><!-- .text end -->
+                    </div><!-- .text end -->
+                    <div class="copyright">
+                        <span>©GONGCHA KOREA CO.,LTD ALL RIGHTS RESERVED.</span>
+                    </div><!-- ,copyright end -->
+                </div><!-- .item_wrap end -->
+            </footer><!-- .footer end -->
+        </section><!-- .section end -->
+    </div><!-- .wrap end -->
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
